@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Toolsbar } from './pages/tools-bar';
+import { Smartsheets } from './pages/table';
+import '@wolf-table/table/dist/table.min.css';
+import { GetContainer } from './pages/getContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Toolsbar />
+       <Smartsheets />
+       <GetContainer />
     </div>
   );
 }
